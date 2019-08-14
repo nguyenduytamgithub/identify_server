@@ -1,0 +1,2 @@
+openssl base64 -d -in /home/identify_server/key/signatureBase64 -out /home/identify_server/key/signatureDgst
+openssl dgst -sha256 -verify /home/identify_server/key/public -signature /home/identify_server/key/signatureDgst /home/identify_server/key/product
